@@ -1,0 +1,136 @@
+.button {
+  border: $color-blue 1px solid;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 14px 28px;
+  border-radius: 35px;
+  color: $color-blue;
+  transition: all $transition-duration;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary-color !important;
+    border-color: $primary-color;
+    color: #fff;
+    transition: all $transition-duration;
+  }
+}
+
+.button-inverse {
+  background-color: #fff;
+  border-color: #fff;
+  color: $primary-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary-color !important;
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+.button-request {
+  margin-right: 18px;
+}
+
+.button-apply {
+  background-color: $color-blue;
+  color: $text-color-white;
+  padding: 14px 24px;
+
+  @include desktop {
+    padding: 14px 42px;
+  }
+}
+
+.header__buttons .button-apply {
+  display: none;
+
+  @include tablet-large {
+    display: block;
+    margin-right: 0;
+  }
+}
+.header__buttons .button-request {
+  display: none;
+  @include tablet-large {
+    display: block;
+  }
+}
+
+.hero__buttons {
+  z-index: 10;
+  margin-left: 18px;
+  position: fixed;
+  left: -18px;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+
+  @include tablet-large {
+    position: relative;
+    top: 6px;
+    left: -2px;
+    width: auto;
+  }
+
+  > * {
+    width: 50%;
+
+    @include tablet-large {
+      width: auto;
+    }
+  }
+}
+
+.hero__buttons .button-apply {
+  border-radius: 0;
+  padding: 13px;
+  border-right: $text-color-white 1px solid;
+
+  @include tablet-large {
+    padding: 14px 54px;
+    margin-right: 18px;
+    border-radius: 35px;
+    padding: 14px 42px;
+  }
+}
+.hero__buttons .button-request {
+  display: none;
+
+  @include tablet-large {
+    display: block;
+    border-radius: 35px;
+    background-color: transparent;
+  }
+}
+
+.card__buttons .button-apply {
+  border-radius: 35px;
+  @include tablet-large {
+    margin-right: 17px;
+  }
+}
+
+.button-mobile {
+  display: block;
+  border-radius: 0;
+  background-color: $color-blue;
+  color: $text-color-white;
+  padding: 0 62px;
+
+  @include tablet-large {
+    display: none;
+  }
+}
+
+.card__buttons {
+  display: none;
+
+  @include tablet-large {
+    display: flex;
+    padding-top: 30px;
+  }
+}

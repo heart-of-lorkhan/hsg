@@ -1,0 +1,70 @@
+@import "components/button";
+@import "components/checkbox";
+@import "components/container";
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/logo";
+@import "components/intro";
+@import "components/hero";
+@import "components/card";
+@import "components/typography";
+@import "components/advantage";
+
+.hero-bee {
+  z-index: -1;
+  position: absolute;
+  width: 140%;
+  left: -45%;
+  top: -80px;
+  max-width: 1715px;
+
+  @include tablet-large {
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+
+  .a {
+    fill: none;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #c5001f;
+    stroke-dasharray: 10;
+  }
+
+  .a1 {
+    fill: none;
+    stroke-width: 10px;
+    stroke: white;
+    stroke-dasharray: 140%;
+    stroke-dashoffset: 0;
+    animation: dash 2s linear;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+
+    @include tablet-large {
+      animation-delay: 1s;
+    }
+  }
+
+  .b {
+    fill: transparent;
+    stroke-dasharray: 0;
+    animation: hero-bee 2s linear;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes hero-bee {
+  to {
+    fill: #c5001f;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -140%;
+  }
+}

@@ -1,0 +1,38 @@
+.header {
+  > * {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid $primary-color;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+
+  @include tablet-large {
+    padding: 48px 0 44px 0;
+
+    margin-left: -22px;
+  }
+}
+
+.header__buttons {
+  display: flex;
+}
+
+.header__logo {
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include desktop {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}

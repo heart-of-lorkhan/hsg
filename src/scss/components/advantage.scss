@@ -1,0 +1,114 @@
+.advantage {
+  padding: 27px 0 54px;
+  background-color: #afadad1a;
+
+  @include tablet-large {
+    padding: 60px 0 90px;
+  }
+}
+
+.advantage__list li {
+  list-style-type: none;
+}
+
+.advantage__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 1590px;
+  margin-right: -10px;
+  margin-left: -10px;
+
+  @include desktop {
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  li {
+    max-width: 241px;
+    width: 50%;
+    margin-bottom: 24px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    @include desktop {
+      max-width: 285px;
+      width: 100%;
+      padding-right: 22px;
+      padding-left: 22px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      position: relative;
+
+      &::after {
+        @include desktop-md {
+          content: "";
+          position: absolute;
+          width: 44px;
+          height: 2px;
+          top: 50%;
+          right: -22px;
+          border: 1px dashed $primary-color;
+        }
+      }
+    }
+
+    &:last-child {
+      max-width: 401px;
+      width: 100%;
+      margin-bottom: 0;
+
+      @include tablet-large {
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+.advantage-item {
+  display: flex;
+  align-items: center;
+  color: $color-red;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  padding: 0;
+  min-height: 66px;
+  border: 14px solid transparent;
+  border-image-source: url(../img/border.svg);
+  border-image-repeat: round repeat;
+  border-image-slice: 16;
+
+  @include tablet-large {
+    font-size: 16px;
+    letter-spacing: -2px;
+    border: 21px solid transparent;
+    border-image-source: url(../img/border.svg);
+    border-image-repeat: round repeat;
+    border-image-slice: 21;
+  }
+
+  @include desktop {
+    font-size: 30px;
+  }
+
+  > span {
+    display: inline-block;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include tablet-large {
+      max-width: 100%;
+    }
+  }
+}

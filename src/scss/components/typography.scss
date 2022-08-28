@@ -1,0 +1,92 @@
+.title {
+  color: $color-red;
+  font-family: $font-family-secondary;
+  font-weight: 900;
+}
+
+.text {
+  color: $text-color;
+  font-family: Arial;
+}
+
+.card-benefits .card__title {
+  margin-bottom: 29px;
+
+  @include tablet-large {
+    margin-bottom: 68px;
+  }
+}
+
+.card-quote .card__title {
+  margin-left: 61px;
+  margin-top: 68px;
+  margin-bottom: 56px;
+}
+.card__text {
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  line-height: 1.1;
+  padding: 4px;
+
+  @include tablet-large {
+    font-size: 20px;
+
+    max-width: 740px;
+    margin-bottom: 42px;
+  }
+}
+
+.card__title {
+  font-size: 30px;
+  line-height: 1;
+
+  @include tablet-large {
+    font-size: 60px;
+    letter-spacing: -3px;
+    margin-bottom: 14px;
+  }
+}
+
+.card__subtitle {
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: $color-red;
+  margin-bottom: 22px;
+
+  @include tablet-large {
+    color: $color-red;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 17px;
+  }
+}
+
+.advantage__title-mobile {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  padding: 0 30px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+
+  @include tablet-large {
+    display: none;
+    letter-spacing: -3px;
+  }
+}
+
+.advantage__title {
+  display: none;
+
+  @include tablet-large {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    display: block;
+  }
+}

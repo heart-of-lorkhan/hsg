@@ -1,0 +1,52 @@
+.hero {
+  padding-top: 120px;
+
+  @include tablet-large {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+.hero__title {
+  font-size: 56px;
+  letter-spacing: -4.35px;
+  line-height: 0.8;
+  margin-bottom: 27px;
+
+  @include tablet-large {
+    font-size: 130px;
+  }
+
+  @include desktop {
+    font-size: 180px;
+  }
+
+  @include desktop-lg {
+    font-size: 227px;
+    letter-spacing: -11.35px;
+
+    margin-bottom: 35px;
+  }
+
+  span {
+    opacity: 0.1;
+  }
+}
+
+.hero__subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-left: 0;
+  letter-spacing: 0.9px;
+  line-height: 1.18;
+  margin-bottom: 30px;
+
+  @include tablet-large {
+    font-size: 50px;
+    letter-spacing: 2.5px;
+    color: $text-color;
+    margin-left: 16px;
+    margin-bottom: 42px;
+  }
+}

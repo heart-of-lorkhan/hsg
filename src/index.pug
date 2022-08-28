@@ -1,0 +1,77 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Human Support Group'
+
+append vars
+  //-
+
+block content
+  main.main
+    section.hero
+      .container.container-hero 
+        <svg class="hero-bee" width="1738.752" height="365.008" viewBox="0 0 1738.752 365.008">
+          <g transform="translate(1.348 -292.913)">
+          <path class="a" d="M2037,401.523s270.852,140.4,624.625,55.547,541.563-152.977,745.8-45.43,271.063,215.852,272.086,216.25" transform="translate(-2037 -62.484)"/>
+          <path class="a1" d="M2037,401.523s270.852,140.4,624.625,55.547,541.563-152.977,745.8-45.43,271.063,215.852,272.086,216.25" transform="translate(-2037 -62.484)"/>
+          <path class="b" d="M107.856,64.654l-1.8-1.406c-6.023-4.7-13.446-10.5-20.2-14.142a17.353,17.353,0,0,0-6.719-12.864c.586-2.325,3.354-11.076,11.986-12.182a1.714,1.714,0,1,0-.435-3.4c-9.711,1.245-13.408,9.9-14.579,13.708a16.873,16.873,0,0,0-14.85,0c-1.171-3.81-4.869-12.463-14.581-13.708a1.714,1.714,0,0,0-.436,3.4c8.633,1.106,11.4,9.857,11.988,12.182a17.347,17.347,0,0,0-6.719,12.864C44.75,52.75,37.33,58.54,31.31,63.239L29.5,64.654a18.84,18.84,0,0,0-7.709,16.761c.552,8.024,5.531,14.927,10.162,17.6a15.647,15.647,0,0,0,7.921,2.116h0c4.854,0,9.661-2.128,13.773-5.919a120.806,120.806,0,0,0,13.881,15.28,1.715,1.715,0,0,0,2.3,0,120.805,120.805,0,0,0,13.881-15.28c4.111,3.791,8.916,5.919,13.773,5.919a15.645,15.645,0,0,0,7.92-2.116c4.633-2.675,9.612-9.579,10.164-17.6A18.837,18.837,0,0,0,107.856,64.654ZM68.679,36.076A13.842,13.842,0,0,1,82.206,47.337a18.883,18.883,0,0,0-7.143-1.768,8.044,8.044,0,0,0-4.079,1.008A7.01,7.01,0,0,0,68.677,48.8a6.994,6.994,0,0,0-2.308-2.219,8.04,8.04,0,0,0-4.079-1.008,18.91,18.91,0,0,0-7.141,1.766A13.842,13.842,0,0,1,68.679,36.076ZM79.856,94.588H57.5c-.485-.619-.96-1.252-1.437-1.893a33.575,33.575,0,0,0,3.395-4.777H77.9A33.843,33.843,0,0,0,81.291,92.7C80.816,93.335,80.341,93.969,79.856,94.588ZM61.34,84.49c1.044-2,2.129-4.247,3.179-6.67h8.317c1.049,2.423,2.135,4.667,3.177,6.67Zm4.593-10.1A84.4,84.4,0,0,0,68.677,66.2a84.883,84.883,0,0,0,2.745,8.192ZM39.874,97.7a12.265,12.265,0,0,1-6.207-1.656c-3.751-2.167-7.99-8.113-8.456-14.867A15.544,15.544,0,0,1,31.6,67.36l1.816-1.416C42.062,59.195,55.12,49,62.29,49a4.7,4.7,0,0,1,2.364.549c2.68,1.547,3.035,6.958.974,14.845a96.006,96.006,0,0,1-8.974,21.542C52.4,93.3,46.124,97.7,39.874,97.7Zm28.8,9.168c-1.658-1.586-4.909-4.823-8.362-8.854H77.039C73.587,102.047,70.337,105.284,68.677,106.871Zm43.467-25.693c-.466,6.755-4.7,12.7-8.458,14.869a12.259,12.259,0,0,1-6.2,1.656c-6.251,0-12.523-4.4-16.779-11.77a95.84,95.84,0,0,1-8.977-21.542c-2.059-7.887-1.7-13.3.974-14.845A4.7,4.7,0,0,1,75.064,49c7.174,0,20.235,10.2,28.88,16.952l1.807,1.409A15.54,15.54,0,0,1,112.144,81.179Z" transform="translate(1767.33 587.446) rotate(133)"/>
+          </g>
+        </svg>
+        h1.title.hero__title(data-scrollspy="animate__fadeInLeft") BE<span>E</span> <br> THE <br> DIFFERENCE
+        h2.hero__subtitle(data-scrollspy="animate__fadeInUp") Join the Human Support Group in the Manchester area today
+        .hero__buttons
+          button.button.button-apply(data-scrollto="#form") Apply now
+          button.button.button-request(data-scrollto="#request") Request a callback
+          button.button.button-mobile(data-scrollto="#request") Callback
+    section.section-cards 
+      .container-fluid 
+        .card.card-difference
+          img.cards__image(src="img/image1.png" alt="smilling people." data-scrollspy="animate__fadeInLeft")
+          .card__content(data-scrollspy="animate__fadeInRight")
+            h3.title.card__title BE THE DIFFERENCE 
+            h4.card__subtitle to John’s afternoon
+            p.text.card__text At the Human Support Group, we provide the very best care with the very best people. Thanks to our dedicated live-in carers, our customers can feel supported in the safety and comfort of their own home to enable them live as independent a life as possible.
+            p.text.card__text  Whatever your skills and experience, we’re always looking for quality people to join us to help make a difference to people’s lives. Are you looking for a rewarding new career?
+            .card__buttons
+              button.button.button-apply(data-scrollto="#form") Apply now
+              button.button.button-request(data-scrollto="#request") Request a callback
+        .card.card-benefits.card-reverse
+          .card__content(data-scrollspy="animate__fadeInLeft")
+            h3.title.card__title PERKS & BENEFITS
+            ul.perks-list
+              li Flexible working with competitive pay
+              li 28 days’ annual leave
+              li A consistent schedule with regular hours and customers
+              li Easy, minimal travel required with local, grouped visits
+              li Continuous training available, including specialist training
+              li Open door policy
+              li Access to C&C’s Lifeworks benefit package
+          img.cards__image(src="img/image2.png" alt="smilling people" data-scrollspy="animate__fadeInRight")
+        .card.card-quote
+          img.cards__image(src="img/image3.png" alt="smilling people" data-scrollspy="animate__fadeInLeft")
+          .card__content-quote(data-scrollspy="animate__fadeInRight")
+            .card__title-quote 
+              <svg xmlns="http://www.w3.org/2000/svg" width="42.255" height="38.199" viewBox="0 0 42.255 38.199"><path d="M16.908 38.199V19.873H9.054a15.271 15.271 0 011.666-7.437q1.666-3.035 6.188-4.581V.001a19.254 19.254 0 00-6.842 2.2 19.357 19.357 0 00-5.414 4.344 19.171 19.171 0 00-3.511 6.069 19.723 19.723 0 00-1.13 7.378v18.207zm25.347 0V19.873h-7.854a15.271 15.271 0 011.666-7.437q1.666-3.035 6.188-4.581V.001a19.254 19.254 0 00-6.843 2.2 19.357 19.357 0 00-5.415 4.344 19.171 19.171 0 00-3.51 6.069 19.723 19.723 0 00-1.131 7.378v18.207z" /></svg>
+            p.text.card__text-quote I have worked in the health and social care industry for 10 years and I can finally say I have found the right domiciliary care company to work for I am passionate about care however it can be very demanding so working with the right team is a must the team are trust worthy hard working and there is always somebody available to offer a helping hand.
+            p.text.card__text-sign  Sue, Care Assistant, Sale
+    section.advantage
+      .container-md
+        h3.title.advantage__title(data-scrollspy="animate__fadeInRight") Working at the human support group
+        h3.title.advantage__title-mobile Our values at the human support group
+        ul.advantage__list(data-scrollspy="animate__fadeInRight")
+          li 
+            .advantage-item
+              span Always kind, always honest
+          li 
+            .advantage-item
+              span We're in it together
+          li 
+            .advantage-item
+              span We are all accountable
+          li 
+            .advantage-item
+              span Getting better every day
+          li 
+            .advantage-item
+              span Working with you to give you the life you want

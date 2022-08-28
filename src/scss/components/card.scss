@@ -1,0 +1,169 @@
+.card {
+  flex-direction: column;
+
+  @include tablet-large {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  > * {
+    @include tablet-large {
+      width: 50% !important;
+    }
+  }
+}
+
+.card-benefits {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    @include desktop {
+      content: "";
+      position: absolute;
+      top: -225px;
+      right: -100px;
+      width: 100%;
+      height: 1000px;
+      background-image: url("../img/path-large.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.card-benefits .card__content {
+  padding: 72px 34px 66px 34px;
+
+  @include tablet-large {
+    padding: 32px;
+  }
+
+  @include desktop {
+    padding: 134px 79px 18px 143px;
+  }
+}
+
+.card__content {
+  padding: 134px 102px 66px 164px;
+}
+
+.perks-list li {
+  display: flex;
+  position: relative;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 20px;
+  list-style-type: none;
+
+  @include tablet-large {
+    margin-bottom: 18px;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 21px;
+    margin-right: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.792' height='20.492' viewBox='0 0 17.792 20.492'%3E%3Cpath d='M6.871 20.492q-1.255-2.268-1.93-3.334l-.716-1.116-.54-.823a23.863 23.863 0 00-3.688-4.554 3.3 3.3 0 012.038-.9 2.931 2.931 0 012.065.85 15.192 15.192 0 012.281 3.24 55.349 55.349 0 013.982-9.652A11.591 11.591 0 0112.746.862 4.241 4.241 0 0115.52.005a11.381 11.381 0 012.268.283A21.712 21.712 0 0012.24 6.93a99.022 99.022 0 00-5.369 13.562z' fill='%23c5001f'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+}
+
+.perks-list {
+  padding-left: 0;
+}
+
+.card__content-quote .card__text-quote {
+  color: $color-red;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: $font-family-secondary;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 18px;
+
+  @include tablet-large {
+    margin-bottom: 28px;
+    line-height: 1.27;
+    color: $text-color;
+  }
+}
+
+.card__title-quote {
+  font-family: $font-family;
+  font-size: 119px;
+  line-height: 0.35;
+}
+
+.card__content-quote {
+  padding: 30px 34px 58px 34px;
+
+  @include tablet-large {
+    padding: 32px;
+  }
+
+  @include desktop {
+    padding: 196px 165px 66px 70px;
+  }
+}
+
+.card__text-sign {
+  font-size: 20px;
+  font-family: $font-family-secondary;
+  color: $text-color;
+  letter-spacing: -1px;
+}
+
+.card-difference .card__content {
+  padding: 25px 34px 14px;
+
+  @include tablet-large {
+    padding: 32px;
+  }
+
+  @include desktop {
+    padding: 72px 127px 66px 78px;
+  }
+}
+
+.card-difference .card__content .card__text {
+  @include tablet-large {
+    margin-bottom: 28px;
+  }
+}
+
+.cards__image {
+  z-index: 1;
+  position: relative;
+  height: 244px;
+  max-width: 100%;
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+
+  @include tablet-large {
+    height: auto;
+    object-fit: none;
+    width: auto;
+  }
+}
+.card-quote .cards__image {
+  height: auto;
+}
+
+.card-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include tablet-large {
+    flex-direction: row;
+  }
+}
+
+.card__title-quote svg {
+  margin-left: 6px;
+  margin-bottom: 18px;
+  color: $primary-color;
+}
